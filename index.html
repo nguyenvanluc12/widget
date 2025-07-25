@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saint Quotes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 8px;
+      font-family: "Georgia", serif;
+      background-color: #fefefe;
+      color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+    .quote {
+      border-left: 5px solid #D3D1CB;
+      padding: 20px;
+      font-size: 20px;
+      max-width: 800px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote" id="quote"></div>
+
+  <script>
+  const quotes = [
+  "Ở hiền gặp lành, ở ác gặp ác.",
+  "Thua keo này bày keo khác.",
+  "Một lời nói dối, vạn điều không tin.",
+  "Khôn ngoan chẳng lọ thật thà.",
+  "Làm phúc phải tội.",
+  "Bụng làm, dạ chịu.",
+  "Chữ tín quý hơn vàng.",
+  "Đói cho sạch, rách cho thơm.",
+  "Kính trên nhường dưới.",
+  "Đường dài mới biết ngựa hay, ở lâu mới biết người ngay kẻ tà.",
+  "Muốn nhanh thì phải từ từ.",
+  "Tiền mất còn tìm được, lòng tin mất là hết.",
+  "Giấy rách phải giữ lấy lề.",
+  "Thấy người ta sáng mắt, mình cũng lóe lóe theo.",
+  "Hổ chết để da, người ta chết để tiếng.",
+  "Lửa thử vàng, gian nan thử sức.",
+  "Mưa lâu thấm đất.",
+  "Khéo ăn thì no, khéo co thì ấm.",
+  "Sẩy chân còn đỡ, sẩy miệng khó thay.",
+  "Biết thì thưa thốt, không biết thì dựa cột mà nghe."
+];
+
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById("quote").textContent = randomQuote;
+  </script>
+</body>
+</html>
